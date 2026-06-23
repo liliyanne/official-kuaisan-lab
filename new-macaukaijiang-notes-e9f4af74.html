@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>关于新澳门开奖 · 站点介绍</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f4f7f5;
+            color: #1e2b2c;
+            line-height: 1.7;
+            padding: 24px 16px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .page-wrapper {
+            max-width: 780px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        /* 卡片网格 — 简洁博客式 */
+        .grid-card {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 40, 30, 0.04), 0 0 0 1px rgba(40, 120, 100, 0.06);
+            padding: 28px 24px;
+            margin-bottom: 24px;
+            transition: box-shadow 0.15s ease;
+        }
+        .grid-card:last-of-type {
+            margin-bottom: 20px;
+        }
+        .grid-card:hover {
+            box-shadow: 0 6px 20px rgba(20, 100, 80, 0.08), 0 0 0 1px rgba(40, 130, 110, 0.15);
+        }
+        /* 蓝绿色点缀 */
+        .accent-border {
+            border-left: 4px solid #2d8f7a;
+            padding-left: 18px;
+        }
+        .accent-text {
+            color: #1d7a66;
+            font-weight: 500;
+        }
+        .accent-badge {
+            display: inline-block;
+            background: #e2f0ec;
+            color: #175b4c;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            padding: 4px 12px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 550;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            margin-bottom: 8px;
+            color: #0f3d34;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #3d5c55;
+            margin-bottom: 16px;
+            font-weight: 400;
+            border-bottom: 1px solid #d6e4e0;
+            padding-bottom: 12px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 530;
+            margin: 20px 0 12px 0;
+            color: #1a4d41;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: #2b3f3b;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: #1b765f;
+            text-decoration: none;
+            border-bottom: 1px solid #b6d0c9;
+            transition: border-color 0.15s, color 0.15s;
+            font-weight: 450;
+        }
+        a:hover, a:focus {
+            color: #0b4f3f;
+            border-bottom-color: #0b4f3f;
+        }
+        blockquote {
+            background: #f0f7f4;
+            border-left: 3px solid #2d8f7a;
+            margin: 20px 0 16px 0;
+            padding: 16px 20px;
+            border-radius: 0 14px 14px 0;
+            font-style: normal;
+            color: #1f4d41;
+        }
+        blockquote p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+        .faq-item {
+            margin-bottom: 16px;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 550;
+            color: #115544;
+            margin-bottom: 4px;
+        }
+        .faq-item p {
+            margin-left: 0;
+            font-size: 0.97rem;
+        }
+        .footnote {
+            font-size: 0.9rem;
+            color: #58746c;
+            border-top: 1px solid #dce8e4;
+            padding-top: 20px;
+            margin-top: 8px;
+            text-align: center;
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 12px;
+        }
+        .pill-link {
+            background: #eaf3ef;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1b6a58;
+            border: 1px solid #c7dbd3;
+            text-decoration: none;
+            border-bottom: none;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .pill-link:hover {
+            background: #d4e7e0;
+            border-color: #8fb5a8;
+            color: #0a4a3b;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #b7cfc6, transparent);
+            margin: 28px 0 20px;
+        }
+        /* 移动端优化 */
+        @media (max-width: 480px) {
+            body { padding: 16px 12px; }
+            .grid-card { padding: 22px 18px; border-radius: 20px; }
+            h1 { font-size: 1.6rem; }
+        }
+        @media (min-width: 640px) {
+            .grid-card { padding: 32px 32px; }
+        }
+        footer {
+            margin-top: auto;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6d8c82;
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!-- 文章标题 + 导语 -->
+    <div class="grid-card">
+        <div class="accent-badge">站点说明 · 2025</div>
+        <h1>关于新澳门开奖：<br>一个可信的信息窗口</h1>
+        <div class="subhead">简洁、稳定、克制的开奖参考 · 不止于数字</div>
+        <p>在各类开奖信息纷杂的线上环境中，<a href="https://new-macaukaijiang.com">新澳门开奖</a> 始终坚持以最朴素的方式提供参考数据。这里没有不必要的修饰，也没有诱导性的表述，唯一的目标就是让浏览者快速获得清晰、连续的开奖记录。</p>
+        <p>站点设计遵循少即是多的原则，用最直接的结构呈现历史结果。无论你是长期关注还是偶然浏览，都能在几秒内找到重点。</p>
+    </div>
+
+    <!-- 正文段落：站点介绍与可信说明 -->
+    <div class="grid-card">
+        <h2 class="accent-text">▎为什么选择这里</h2>
+        <p>「新澳门开奖」并非一个追逐流量的平台，而是从信息整理的角度出发，将公开数据以统一格式呈现。每一次更新都保持相同的版面逻辑，避免因为花哨的动效或复杂的导航分散注意力。对于频繁查阅的用户而言，这种稳定性本身就是一种效率。</p>
+        <p>从内容可信度来说，站点引用的数据源均为公开信息，且每条记录都附带时间戳与期号。我们不做预测、不提供分析、不暗示趋势——只做忠实的整理与展示。如果你需要快速查对近期的开奖结果，这里会是一个顺手且安静的去处。</p>
+        <blockquote>
+            <p>“信息的价值往往不在于多，而在于准确与可溯。一个只呈现事实的页面，反而更值得被记住。”</p>
+        </blockquote>
+        <p>在移动设备上浏览时，页面采用自适应布局，卡片式结构让手指点按更加从容。蓝绿色调并非为了美观而存在，而是经过对比后选择的低疲劳色——适合在任意光线下长时间阅读。</p>
+    </div>
+
+    <!-- 引用提示 + 访问句 -->
+    <div class="grid-card">
+        <h2 class="accent-text">▎使用建议与提醒</h2>
+        <p>如果你希望直接跳转到结果列表，可以在浏览器中收藏 <a href="https://new-macaukaijiang.com">新澳门开奖</a> 作为快速入口。整个站点没有弹窗、没有悬浮广告、也没有强制注册的环节，打开即用。</p>
+        <p>需要留意的是，任何开奖信息都存在时间差，请以官方最终公告为准。本站所做的只是把分散的数据汇集到同一页面，方便对比与回顾。请理性看待数据，不要将其作为任何决策的唯一依据。</p>
+        <div class="flex-center">
+            <a href="https://new-macaukaijiang.com" class="pill-link">新澳门开奖</a>
+        </div>
+        <p style="text-align:center; font-size:0.92rem; color:#4d6f65;">—— 保持简洁，保持可信 ——</p>
+    </div>
+
+    <!-- FAQ 摘要（非固定章节，只提取三个常见疑问） -->
+    <div class="grid-card">
+        <h2 class="accent-text">▎常见疑问摘要</h2>
+        <div class="faq-item">
+            <strong>数据更新频率如何？</strong>
+            <p>通常在每个开奖日结束后，结果会在短时间内同步至页面。如遇特殊情况可能稍有延迟，但整体保持与公开渠道同步。</p>
+        </div>
+        <div class="faq-item">
+            <strong>是否提供历史走势或统计图表？</strong>
+            <p>目前页面专注展示原始结果列表，未包含图表或分析工具。如果你需要历史数据，可直接翻阅往期记录，所有期数按时间倒序排列。</p>
+        </div>
+        <div class="faq-item">
+            <strong>移动端和电脑端体验有区别吗？</strong>
+            <p>页面采用响应式设计，在手机、平板和桌面浏览器上均为卡片布局。字体大小与间距会根据屏幕自动调整，确保阅读舒适度一致。</p>
+        </div>
+        <hr>
+        <p style="font-size:0.95rem;">如果想深入了解或直接使用，随时可以访问 <a href="https://new-macaukaijiang.com">新澳门开奖</a>。我们相信好的工具不需要太多说明。</p>
+    </div>
+
+    <!-- 结尾访问句 + footer -->
+    <div class="footnote">
+        <span>© 介绍页 · 无关联第三方 · 仅作信息展示</span>
+    </div>
+    <footer>
+        <span>简洁博客式 · 蓝绿点缀 · 移动优先</span>
+    </footer>
+
+</div>
+</body>
+</html>
